@@ -3,3 +3,222 @@
     padding: 0%;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+body {
+    width: 100%;
+}
+
+.Background {
+    width: 100%;
+    height: 3400px;
+    border: 0px solid black;
+    box-sizing: border-box;
+    background-image: url(Image/WebWeb4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.mainBox1 {
+    border: 0px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    height: 830px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.majorSubMBa {
+    border: 0px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+.subMBa{
+    border: 0px solid black;
+    box-sizing: border-box;
+    width: 40%;
+    height: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: right;
+}
+.logoBox {
+    border: 0px solid black;
+    box-sizing: border-box;
+    width: 110px;
+    height: 110px;
+}
+.identityMainBox {
+    border: 0px solid black;
+    box-sizing: border-box;
+    width: 370px;
+    height: 110px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.subIMa {
+    border: 0px solid black;
+    box-sizing: border-box;
+    width: 170px;
+    height: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.nickNameLine1, .nickNameLine2, .nickNameLine3 {
+    border: 0px solid #5B3C99;
+    width: 170px;
+    height: 36px;
+    font-size: 32px;
+    color: #5B3C99;
+}
+.subIMb {
+    border: 0px solid black;
+    box-sizing: border-box;
+    width: 200px;
+    height: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+}
+.firstJob, .secondJob {
+    border-left: 2px solid #5B3C99;
+    box-sizing: border-box;
+    width: 370px;
+    height: 55px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 7px;
+    color: #5B3C99;
+}
+.firstJob {
+    border-bottom: 2px solid #5B3C99;
+}
+
+.subMBb {
+    border: 0px solid black;
+    box-sizing: border-box;
+    width: 60%;
+    height: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: right;
+}
+.experienceButton, .aboutButton, .projectButton, .contactButton {
+    border: 0px solid black;
+    box-sizing: border-box;
+    width: 130px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    /* margin-left: 20px; */
+}
+.experienceButton {
+    width: 182px;
+}
+.headerButton {
+    font-size: 24px;
+    text-decoration: none;
+    color: #5B3C99;
+}
+
+.majorSubMBb {
+    border: 0px solid red;
+    box-sizing: border-box;
+    width: 100%;
+    height: 615px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.photoProfile {
+    display: block;
+    width: 195px;
+    height: 195px;
+    border: 0px solid black;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border-radius: 100%;
+    background-image: url(Image/PhotoProfile.jpg);
+    background-repeat: no-repeat;
+    background-size: 180%;
+    background-position: 65%;
+}
+.partOfBox {
+    border: 0px solid black;
+    display: block;
+    width: 100vw;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* justify-content: center; */
+}
+.partOfTittle {
+    border: 0px solid black;
+    display: block;
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.partOfLogo1, .partOfLogo2, .partOfLogo3 {
+    border: 0px solid black;
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+.partOfLogo1 {
+    background-image: url(Image/LOGO\ UNAIR\ ESPORT.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50%;
+}
+.partOfLogo2 {
+    background-image: url(Image/Logo\ Unair.jpeg);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: 50%;
+}
+.partOfLogo3 {
+    background-image: url(Image/Logo\ TRKB.jpeg);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: 50%;
+}
+.moreButton {
+    border: 0px solid black;
+    width: 100vw;
+    height:100px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+.buttonMAM {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid black;
+    background-color: #1b1b1e;
+    color: #c4c4c4;
+    width: 140px;
+    height: 50px;
+    text-decoration: none;
+    border-radius: 20px;
+}
