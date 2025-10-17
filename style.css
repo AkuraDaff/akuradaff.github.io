@@ -1,7 +1,7 @@
 * {
     margin: 0%;
     padding: 0%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'exo';
 }
 
 body {
@@ -240,34 +240,192 @@ body {
     flex-wrap: wrap;
     align-items: end;
     justify-content: center;
+    margin-top: 5px;
 }
 .H3mainBM1Tittle {
+    display: flex;
+    justify-content: center;
+    align-items: end;
     border: 0px solid red;
     width: 50vw;
     height: 100px;
-    text-align: center;
-    font-size: 50px;
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    color: rgb(196, 196, 196);
+    font-family: 'Exo', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #E0D7FF;
+    letter-spacing: 3px;
+    text-shadow: 0 0 15px rgba(179, 136, 255, 0.3);
 }
 .mainBM1Image {
-    border: 1px solid black;
+    border: 0px solid black;
     box-sizing: border-box;
-    width: 35vw;
+    width: 40vw;
     height: 650px;
+    display: flex;
+    justify-content: right;
 }
 .mainBM1Description {
-    border: 1px solid black;
+    border: 0px solid black;
     box-sizing: border-box;
-    width: 64vw;
+    width: 59vw;
     height: 650px;
-
 }
-.mainBM1BubbleA {
-    border: 1px solid black;
-    width: 120px;
-    height: 120px;
-    border-radius: 100%;
+.maimainBM1Square {
+    border: 0px solid black;
+    width: 600px;
+    height: 580px;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: baseline; */
+    justify-content: space-around;
+    position: relative;
+}
+.mainBM1SquareB {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0px solid black;
+    width: 300px;
+    height: 580px;
+    /* transform: translate(-9px, 0px); */
+    border-radius: 10px;
+    background: #1E0A3C;
+    /* box-shadow: 0 0 20px rgba(255, 0, 128, 0.5); */
+    color: #E0E7FF;
+}
+#logoSkillB {
+    display: block;
+    font-size: 100px;
+}
+.mainBM1SquareA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 0px solid #5E60CE;
+    width: 285px;
+    height: 285px;
+    transform: translate(-1.5px, 0px);
+    border-radius: 10px;
+    background: #1A1F35;
+    /* box-shadow: 0 0 20px rgba(0, 224, 255, 0.4); */
+    color: #E5E9F5;
+}
+#logoSkillA {
+    display: block;
+    font-size: 60px;
+}
+.mainBM1SquareC {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0px solid red;
+    width: 285px;
+    height: 285px;
+    transform: translate(-155px, -290px);
+    border-radius: 10px;
+    background: #1E1B4B;
+    /* box-shadow: 0 0 20px rgba(255, 0, 128, 0.5); */
+    color: #E0E7FF;
+}
+#logoSkillC {
+    display: block;
+    font-size: 60px;
+}
+
+.experienceDescription {
+    border: 1px solid #4527A0;
+    background: linear-gradient(to bottom, #4527A0, #5E35B1);
+    box-sizing: border-box;
+    width: 56.6vw;
+    height: 285px;
+    margin-top: 0%;
+    margin-left: 15px;
+    border-radius: 10px;
+    /* align-items: center;
+    justify-content: center; */
+    text-align: justify;
+    box-shadow: 5px 5px 5px 0px black;
+    border-left: 3px solid #B388FF;
+    /* border-left: 5px solid #7E57C2 */
+}
+.experienceDescriptionTittle {
+    font-size: 24px;
+    margin-left: 45px;
+    margin-top: 25px;
+    color: #FFFFFF;
+}
+.experienceDescriptionLorem {
+    font-size: 17px;
+    margin-left: 45px;
+    margin-top: 15px;
+    margin-right: 45px;
+    color: #E0E0E0;
+    line-height: 1.6;
+    font-weight: 400;
+}
+.skillDescription {
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 0px solid red;
+    width: 56.5vw;
+    height: 285px;
+    margin-left: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    /* align-items: center;
+    justify-content: center; */
+    text-align: justify;
+}
+.skillDescriptions {
+    display: block;
+    box-sizing: border-box;
+    border: 0px solid black;
+    background: linear-gradient(to bottom, #4527A0, #5E35B1);
+    width: 50vw;
+    height: 285px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px black;
+    border-left: 3px solid #7C4DFF;
+    
+}
+.moreMainBoxMaster1Button {
+    display: block;
+    box-sizing: border-box;
+    border: 0px solid black;
+    background: linear-gradient(to bottom, #4527A0, #5E35B1);
+    width: 6vw;
+    height: 285px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px black;
+}
+.skillDescriptionTittle {
+    font-size: 24px;
+    margin-left: 45px;
+    margin-top: 25px;
+    color: #FFFFFF;
+}
+.skillDescriptionLorem {
+    font-size: 17px;
+    margin-left: 45px;
+    margin-top: 15px;
+    margin-right: 45px;
+    color: #E0E0E0;
+    line-height: 1.6;
+    font-weight: 400;
+}
+.buttonMAMMBM {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0px solid blue;
+    width: 6vw;
+    height: 285px;
+    text-decoration: none;
+}
+#RArrow {
+    font-size: 30px;
+    color: #c4c4c4;
 }

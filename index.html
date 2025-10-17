@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Profile</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="FontAwesome/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- link AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
     <div class="Background">
@@ -77,23 +82,59 @@
                         </h2>
                     </div>
                     <div class="mainBM1Image">
-                        <div class="mainBM1BubbleA"></div>
-                        <div class="mainBM1BubbleB"></div>
-                        <div class="mainBM1BubbleC"></div>
-                        <div class="mainBM1BubbleD"></div>
+                        <div class="maimainBM1Square">
+                            <div class="mainBM1SquareA">
+                                <i data-aos="fade-up" data-aos-duration="2000" class="fas fa-laptop-code" id="logoSkillA"></i>
+                            </div>
+                            <div class="mainBM1SquareB">
+                                <i data-aos="zoom-in" data-aos-duration="2000" class="fas fa-head-side-virus" id="logoSkillB"></i>
+                            </div>
+                            <div class="mainBM1SquareC">
+                                <i data-aos="fade-down" data-aos-duration="2000" data-aos-offset="-300" class="fas fa-language" id="logoSkillC"></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="mainBM1Description">
-                        <div class="moreMainBoxMaster1Button">
-                        <a class="buttonMAMMBM" href=""></a>
-                    </div>
+                        <div class="experienceDescription">
+                            <h3 class="experienceDescriptionTittle">
+                                Past Event
+                                <i class="fas fa-chevron-right" id="RArrow"></i>
+                            </h3>
+                            <p class="experienceDescriptionLorem">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, itaque facere exercitationem quae pariatur totam quia provident tempore nam maiores dignissimos quod saepe adipisci culpa? Atque perspiciatis animi maiores sed. Iusto reprehenderit, quisquam amet consequatur, nobis modi id quas perspiciatis inventore, quia eum itaque fugit molestiae quibusdam recusandae! Esse incidunt ipsum dignissimos eligendi aliquid error ex facere quasi quo inventore ducimus, eius, nemo quod quibusdam nesciunt, ad libero atque doloribus impedit praesentium voluptates. Pariatur, commodi?
+                            </p>
+                        </div>
+                        <div class="skillDescription">
+                            <div class="skillDescriptions">
+                                <h3 class="skillDescriptionTittle">
+                                Personal Skill
+                            </h3>
+                            <p class="skillDescriptionLorem">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi saepe earum quas ipsum nostrum ut, unde reiciendis assumenda similique neque vero velit atque illum itaque tempora. Libero nostrum rerum saepe delectus! Nostrum harum debitis porro, voluptates laboriosam fuga dolorem iure tempora vel. Quas iure sint dolores in! Quas, quae, labore fuga ullam iste quia iure soluta velit iusto ipsam nemo, fugit aut. Soluta quo ducimus ullam natus recusandae, cumque quisquam repellat dolore sed reprehenderit nesciunt!
+                            </p>
+                            </div>
+                            <div class="moreMainBoxMaster1Button">
+                                <a class="buttonMAMMBM" href="">
+                                    <i class="fas fa-chevron-right" id="RArrow"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </Section>
+            <section>
+                <div class="mainBoxMaster2"></div>
+            </section>
         </main>
         <footer>
             <section></section>
         </footer>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
