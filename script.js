@@ -16,12 +16,13 @@ function updatePosition() {
 }
 
 nextButton.addEventListener('click', function (){
-    boxPost.push(boxPost.shift());
+    boxPost.unshift(boxPost.pop());
     updatePosition();
 
 });
 
 prevButton.addEventListener('click', function (){
-    boxPost.unshift(boxPost.pop());
+    boxPost.push(boxPost.shift());
     updatePosition();
+
 });
