@@ -990,6 +990,19 @@ li  {
     transform: inherit;
     opacity: 100%;
 }
+.menuBarsButton {
+    display: none;
+}
+.cutomUL {
+    border: 0px solid black;
+    display: flex;
+}
+#barsButton {
+    display: none;
+}
+#barsOptArrow {
+    display: none;
+}
 }
 
 /*Small Windows & Mac Version */
@@ -1979,6 +1992,19 @@ li  {
     transform: inherit;
     opacity: 100%;
 }
+.menuBarsButton {
+    display: none;
+}
+.cutomUL {
+    border: 0px solid black;
+    display: flex;
+}
+#barsButton {
+    display: none;
+}
+#barsOptArrow {
+    display: none;
+}
 }
 
 /* Ipad Version */
@@ -1997,7 +2023,7 @@ li  {
 
 .headerBoxMaster {
     margin: auto;
-    border: 1px solid black;
+    border: 0px solid black;
     box-sizing: border-box;
     width: 98%;
     height: 52rem;
@@ -2008,18 +2034,19 @@ li  {
 }
 
 .majorSubMBa {
-    border: 1px solid black;
+    border: 0px solid black;
     box-sizing: border-box;
     width: 99%;
     height: 20%;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     /* margin-top: 25px; */
 }
 .subMBa{
-    border: 1px solid black;
+    border: 0px solid black;
     box-sizing: border-box;
-    width: 40%;
+    width: 80%;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -2028,13 +2055,13 @@ li  {
 }
 .logoBox {
     display: none;
-    border: 1px solid red;
+    border: 0px solid red;
     box-sizing: border-box;
     width: 110px;
     height: 110px;
 }
 .identityMainBox {
-    border: 1px solid red;
+    border: 0px solid red;
     box-sizing: border-box;
     width: 100%;
     height: 100%;
@@ -2044,25 +2071,38 @@ li  {
     justify-content: center;
 }
 .subIMa {
-    border: 1px solid blue;
+    border: 0px solid blue;
     box-sizing: border-box;
-    width: 40%;
-    height: 60%;
+    width: 35%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: start;
 }
 .nickNameLine1, .nickNameLine2, .nickNameLine3 {
+    display: flex;
+    flex-wrap: wrap;
     border: 0px solid #5B3C99;
-    width: 170px;
-    height: 36px;
-    font-size: 24px;
+    width: 100%;
+    height: 33%;
+    font-size: 35px;
     color: #5B3C99;
+    letter-spacing: 5px;
+}
+.nickNameLine1 {
+    align-items: end;
+}
+.nickNameLine2 {
+    align-items: center;
+}
+.nickNameLine3 {
+    align-items: start;
 }
 .subIMb {
-    border: 1px solid black;
+    border: px solid black;
     box-sizing: border-box;
-    width: 60%;
+    width: 65%;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -2072,50 +2112,82 @@ li  {
 .firstJob, .secondJob {
     border-left: 2px solid #5B3C99;
     box-sizing: border-box;
-    width: 370px;
-    height: 55px;
-    font-size: 20px;
+    width: 100%;
+    height: 50%;
+    font-size: 35px;
     display: flex;
     align-items: center;
     justify-content: left;
     padding-left: 7px;
     color: #5B3C99;
+    letter-spacing: 5px;
 }
 .firstJob {
     border-bottom: 2px solid #5B3C99;
 }
 
 .subMBb {
-    border: 1px solid black;
+    border: 0px solid blue;
     box-sizing: border-box;
-    width: 60%;
-    height: 110px;
+    width: 20%;
+    height: 100%;
+    display: block;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.cutomUL {
+    display: none;
+    background-color: #c4c4c4;
+    border: 0px solid #5B3C99;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 200%;
+    height: 250%;
+    transform: translateX(-50%);
+}
+.menuBarsButton {
+    display: none;
+}
+input#barsButtonZZ:checked ~ .cutomUL {
+    display: flex;
+    z-index: 100;
+}
+#barsButton {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    border: 0px solid #5B3C99;
+    color: #5B3C99;
+    font-size: 50px;
+    transform: translateX(90%);
 }
 .experienceButton, .aboutButton, .projectButton, .contactButton {
-    border: 0px solid black;
+    border: 1px solid black;
     box-sizing: border-box;
-    width: 130px;
-    height: 110px;
+    width: 100%;
+    height: 25%;
     display: flex;
-    align-items: center;
-    justify-content: left;
     /* margin-left: 20px; */
 }
-.experienceButton {
-    width: 182px;
-}
 .headerButton {
-    font-size: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    /* text-align: right; */
+    font-size: 28px;
     text-decoration: none;
     color: #5B3C99;
 }
 
 .majorSubMBb {
-    border: 1px solid red;
+    border: 0px solid red;
     box-sizing: border-box;
     width: 99%;
     height: 75%;
@@ -2218,16 +2290,16 @@ li  {
     border: 0px solid black;
     box-sizing: border-box;
     width: 98%;
-    height: 800px;
+    height: 700px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    transform: translateY(5%);
+    justify-content: space-between;
+    margin-top: 10%;
 }
 .mainBM1Tittle {
     border: 0px solid black;
-    width: 99vw;
-    height: 150px;
+    width: 100%;
+    height: 15%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -2253,15 +2325,19 @@ li  {
     border: 0px solid black;
     box-sizing: border-box;
     width: 40%;
-    height: 650px;
+    height: 85%;
     display: flex;
     justify-content: right;
 }
 .mainBM1Description {
     border: 0px solid black;
     box-sizing: border-box;
-    width: 56%;
-    height: 650px;
+    width: 60%;
+    height: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 .maimainBM1Square {
     border: 0px solid black;
@@ -2278,32 +2354,34 @@ li  {
     align-items: center;
     justify-content: center;
     border: 0px solid black;
-    width: 50%;
-    height: 80%;
+    width: 33%;
+    height: 70%;
     /* transform: translate(-9px, 0px); */
     border-radius: 10px;
     background: #1E0A3C;
     /* box-shadow: 0 0 20px rgba(255, 0, 128, 0.5); */
     color: #E0E7FF;
-    transform: translateY(5%);
+    transform: translateY(23%);
+    overflow: hidden;
 }
 #logoSkillB {
     display: block;
-    font-size: 100px;
+    font-size: 60px;
 }
 .mainBM1SquareA {
     display: flex;
     align-items: center;
     justify-content: center;
     border-left: 0px solid #5E60CE;
-    width: 47%;
-    height: 40%;
+    width: 33%;
+    height: 70%;
     /* transform: translate(-1.5px, 0px); */
     border-radius: 10px;
     background: #1A1F35;
     /* box-shadow: 0 0 20px rgba(0, 224, 255, 0.4); */
     color: #E5E9F5;
-    transform: translateY(10%);
+    transform: translateY(43%);
+    overflow: hidden;
 }
 #logoSkillA {
     display: block;
@@ -2314,13 +2392,14 @@ li  {
     align-items: center;
     justify-content: center;
     border: 0px solid red;
-    width: 47%;
-    height: 40%;
-    transform: translate(-133px, -230px);
+    width: 33%;
+    height: 70%;
+    /* transform: translate(-133px, -230px); */
     border-radius: 10px;
     background: #1E1B4B;
     /* box-shadow: 0 0 20px rgba(255, 0, 128, 0.5); */
     color: #E0E7FF;
+    overflow: hidden;
 }
 #logoSkillC {
     display: block;
@@ -2331,8 +2410,8 @@ li  {
     border: 1px solid #4527A0;
     background: linear-gradient(to bottom, #4527A0, #5E35B1);
     box-sizing: border-box;
-    width: 100%;
-    height: 45%;
+    width: 98%;
+    height: 35%;
     margin-top: 0%;
     /* margin-left: 15px; */
     border-radius: 10px;
@@ -2341,55 +2420,69 @@ li  {
     text-align: justify;
     box-shadow: 5px 5px 5px 0px black;
     border-left: 3px solid #B388FF;
+    overflow: hidden;
     /* border-left: 5px solid #7E57C2 */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 .experienceDescriptionTittle {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 90%;
-    height: 10%;
+    height: 20%;
     border: 0px solid black;
-    font-size: 24px;
-    margin-left: 45px;
-    margin-top: 25px;
+    font-size: 20px;
+    /* margin-left: 45px;
+    margin-top: 25px; */
     color: #FFFFFF;
+    letter-spacing: 3px;
 }
 #tittleIcon {
     font-size: 28px;
     z-index: 100;
 }
 .experienceDescriptionLorem {
+    border: 0px solid black;
     font-size: 17px;
-    margin-left: 45px;
+    width: 90%;
+    height: 60%;
+    /* margin-left: 45px;
     margin-top: 15px;
-    margin-right: 45px;
+    margin-right: 45px; */
     color: #E0E0E0;
     line-height: 1.6;
     font-weight: 400;
+    overflow: hidden;
 }
 .skillDescription {
     font-size: 18px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     border: 0px solid red;
-    width: 100%;
-    height: 285px;
+    width: 98%;
+    height: 40%;
     /* margin-left: 15px; */
-    margin-top: 5px;
+    /* margin-top: 5px; */
     border-radius: 10px;
     /* align-items: center;
     justify-content: center; */
     text-align: justify;
+    transform: translateY(-25%);
 }
 .skillDescriptions {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
     box-sizing: border-box;
     border: 0px solid black;
     background: linear-gradient(to bottom, #4527A0, #5E35B1);
-    width: 90%;
-    height: 285px;
+    width: 100%;
+    height: 80%;
     border-radius: 10px;
     box-shadow: 5px 5px 5px 0px black;
     border-left: 3px solid #7C4DFF;
@@ -2402,31 +2495,36 @@ li  {
     box-sizing: border-box;
     border: 0px solid black;
     background: linear-gradient(to bottom, #4527A0, #5E35B1);
-    width: 9%;
-    height: 285px;
+    width: 100%;
+    height: 15%;
     border-radius: 10px;
     box-shadow: 5px 5px 5px 0px black;
 }
 .skillDescriptionTittle {
+    border: 0px solid black;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 90%;
-    height: 10%;
-    border: 0px solid black;
-    font-size: 24px;
-    margin-left: 45px;
-    margin-top: 25px;
+    height: 20%;
+    font-size: 20px;
+    /* margin-left: 45px;
+    margin-top: 25px; */
     color: #FFFFFF;
+    letter-spacing: 3px;
 }
 .skillDescriptionLorem {
+    border: 0px solid black;
     font-size: 17px;
-    margin-left: 45px;
+    width: 90%;
+    height: 60%;
+    /* margin-left: 45px;
     margin-top: 15px;
-    margin-right: 45px;
+    margin-right: 45px; */
     color: #E0E0E0;
     line-height: 1.6;
     font-weight: 400;
+    overflow: hidden;
 }
 .buttonMAMMBM {
     display: flex;
@@ -2434,10 +2532,10 @@ li  {
     justify-content: center;
     border: 0px solid blue;
     border-radius: 10px;
-    width: 6vw;
-    height: 285px;
     padding-top: 10px;
     text-decoration: none;
+        width: 100%;
+    height: 15%;
     font-size: 30px;
     color: #c4c4c4;
 }
@@ -2448,8 +2546,8 @@ li  {
 .buttonMAMMBM:hover {
     background-color: #c4c4c4;
     color: #5E35B1;
-    width: 6vw;
-    height: 285px;
+    width: 100%;
+    height: 100%;
     transition: 0.4s;
 }
 .mainBoxMaster2 {
@@ -2462,13 +2560,14 @@ li  {
     width: 99%;
     height: 800px;
     /*  */
-    margin-top: 70px;
+    margin-top: 25%;
+    transform: translateY(-20%);
 }
 .mainBoxMaster2Tittle {
     display: flex;
     justify-content: center;
     width: 99%;
-    height: 100px;
+    height: 10%;
     border: 0px solid black;
 }
 .mainBoxMaster2Content {
@@ -2476,9 +2575,9 @@ li  {
     align-items: center;
     justify-content: center;
     width: 99%;
-    height: 670px;
+    height: 90%;
     border: 0px solid black;
-    transform: translateY(-20%);
+    /* transform: translateY(-10%); */
 }
 .H2mainBM2Tittle {
     display: flex;
@@ -2486,7 +2585,7 @@ li  {
     justify-content: center;
     border: 0px solid blue;
     width: 99%;
-    height: 100px;
+    height: 20%;
     font-size: 3rem;
     text-transform: uppercase;
     color: #5B3C99;
@@ -2497,21 +2596,26 @@ li  {
     position: inherit;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 99%;
-    height: 670px;
+    height: 100%;
     box-sizing: border-box;
     border: 0px solid orange;
     list-style: none;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    /* gap: 10%; */
 }
 .arrowButton {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     justify-content: space-between;
     position: absolute;
-    top: 270%;
-    width: 29%;
+    /* top: 270%; */
+    width: 75%;
     /* max-width: 30%; */
     border: 0px solid black;
     z-index: 100;
@@ -2521,8 +2625,8 @@ li  {
 }
 .arrowButton button {
     display: block;
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
     border: 0px solid black;
     border-radius: 50%;
     cursor: pointer;
@@ -2542,222 +2646,21 @@ li  {
     flex-wrap: wrap;
     justify-content: center; */
     /* background-color: dimgray; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
     border: 1px solid black;
     border-radius: 10px;
-    width: 13%;
-    height: 40%;
+    width: 65%;
+    height: 85%;
     margin-right: 20px;
     margin-left: 20px;
     position: inherit;
-    border: 1px solid #4527A0;
+    border: 0px solid #4527A0;
     background: linear-gradient(to top, #4527A0, #5E35B1);
     box-sizing: border-box;
     box-shadow: 5px 5px 5px 0px black;
-}
-/* content Box1 */
-.mainBoxMaster2Content .contentBoxSlider .contentBox1.pos1 {
-    z-index: 10;
-    transform: translateX(0%) scale(1);
-    opacity: 20%;
-    margin-right: 20px;
-    margin-left: 20px;
-    transition: 1s;
-}
-.mainBoxMaster2Content .contentBoxSlider .contentBox1.pos2 {
-    z-index: 90;
-    transform: translateX(121%) scale(1);
-    opacity: 70%;
-    margin-right: 20px;
-    margin-left: 20px;
-    transition: 1s;
-}
-.mainBoxMaster2Content .contentBoxSlider .contentBox1.pos3 {
-    z-index: 100;
-    transform: translateX(242%) scale(1.6);
-    opacity: 1;
-    margin-right: 100px;
-    margin-left: 100px;
-    transition: 1s;
-}
-.mainBoxMaster2Content .contentBoxSlider .contentBox1.pos4 {
-    z-index: 90;
-    transform: translateX(444.5%) scale(1);
-    opacity: 70%;
-    margin-right: 20px;
-    margin-left: 20px;
-    transition: 1s;
-}
-.mainBoxMaster2Content .contentBoxSlider .contentBox1.pos5 {
-    z-index: 10;
-    transform: translateX(565%) scale(1);
-    opacity: 20%;
-    margin-right: 20px;
-    margin-left: 20px;
-    transition: 1s;
-}
-/* content Box2 */
-.mainBoxMaster2Content .contentBoxSlider .contentBox2.pos1 {
-    z-index: 10;
-    transform: translateX(-121%) scale(1);
-    opacity: 20%;
-    margin-right: 20px;
-    margin-left: 20px;
-    transition: 1s;
-}
-.mainBoxMaster2Content .contentBoxSlider .contentBox2.pos2 {
-    z-index: 90;
-    transform: translateX(0%) scale(1);
-    opacity: 70%;
-    margin-right: 20px;
-    margin-left: 20px;
-    transition: 1s;
-}
-.mainBoxMaster2Content .contentBoxSlider .contentBox2.pos3 {
-    z-index: 100;
-    transform: translateX(121%) scale(1.6);
-    opacity: 1;
-    margin-right: 100px;
-    margin-left: 100px;
-    transition: 1s;
-}
-.mainBoxMaster2Content .contentBoxSlider .contentBox2.pos4 {
-    z-index: 90;
-    transform: translateX(242%) scale(1);
-    opacity: 70%;
-    margin-right: 20px;
-    margin-left: 20px;
-    transition: 1s;
-}
-.mainBoxMaster2Content .contentBoxSlider .contentBox2.pos5 {
-    z-index: 10;
-    transform: translateX(444.5%) scale(1);
-    opacity: 20%;
-    margin-right: 20px;
-    margin-left: 20px;
-    transition: 1s;
-}
-/* content Box3 */
-.mainBoxMaster2Content .contentBoxSlider .contentBox3.pos1 {
-    z-index: 10;
-    transform: translateX(-242%) scale(1);
-    opacity: 20%;
-    margin-right: 20px;
-    margin-left: 20px;
-    transition: 1s;
-}
-.mainBoxMaster2Content .contentBoxSlider .contentBox3.pos2 {
-    z-index: 90;
-    transform: translateX(-121%) scale(1);
-    opacity: 70%;
-    margin-right: 20px;
-    margin-left: 20px;
-    transition: 1s;
-}
-.mainBoxMaster2Content .contentBoxSlider .contentBox3.pos3 {
-    z-index: 100;
-    transform: translateX(0%) scale(1.6);
-    opacity: 1;
-    margin-right: 100px;
-    margin-left: 100px;
-    transition: 1s;
-}
-.mainBoxMaster2Content .contentBoxSlider .contentBox3.pos4 {
-    z-index: 90;
-    transform: translateX(121%) scale(1);
-    opacity: 70%;
-    margin-right: 20px;
-    margin-left: 20px;
-    transition: 1s;
-}
-.mainBoxMaster2Content .contentBoxSlider .contentBox3.pos5 {
-    z-index: 10;
-    transform: translateX(242%) scale(1);
-    opacity: 20%;
-    margin-right: 20px;
-    margin-left: 20px;
-    transition: 1s;
-}
-/* content Box4 */
-.mainBoxMaster2Content .contentBoxSlider .contentBox4.pos1 {
-    z-index: 10;
-    transform: translateX(-444.5%) scale(1);
-    opacity: 20%;
-    margin-right: 20px;
-    margin-left: 20px;
-    transition: 1s;
-}
-.mainBoxMaster2Content .contentBoxSlider .contentBox4.pos2 {
-    z-index: 90;
-    transform: translateX(-242%) scale(1);
-    opacity: 70%;
-    margin-right: 20px;
-    margin-left: 20px;
-    transition: 1s;
-}
-.mainBoxMaster2Content .contentBoxSlider .contentBox4.pos3 {
-    z-index: 100;
-    transform: translateX(-121%) scale(1.6);
-    opacity: 1;
-    margin-right: 100px;
-    margin-left: 100px;
-    transition: 1s;
-}
-.mainBoxMaster2Content .contentBoxSlider .contentBox4.pos4 {
-    z-index: 90;
-    transform: translateX(0%) scale(1);
-    opacity: 70%;
-    margin-right: 20px;
-    margin-left: 20px;
-    transition: 1s;
-}
-.mainBoxMaster2Content .contentBoxSlider .contentBox4.pos5 {
-    z-index: 10;
-    transform: translateX(121%) scale(1);
-    opacity: 20%;
-    margin-right: 20px;
-    margin-left: 20px;
-    transition: 1s;
-}
-/* content Box5 */
-.mainBoxMaster2Content .contentBoxSlider .contentBox5.pos1 {
-    z-index: 10;
-    transform: translateX(-565%) scale(1);
-    opacity: 20%;
-    margin-right: 20px;
-    margin-left: 20px;
-    transition: 1s;
-}
-.mainBoxMaster2Content .contentBoxSlider .contentBox5.pos2 {
-    z-index: 90;
-    transform: translateX(-444.5%) scale(1);
-    opacity: 70%;
-    margin-right: 20px;
-    margin-left: 20px;
-    transition: 1s;
-}
-.mainBoxMaster2Content .contentBoxSlider .contentBox5.pos3 {
-    z-index: 100;
-    transform: translateX(-242%) scale(1.6);
-    opacity: 1;
-    margin-right: 100px;
-    margin-left: 100px;
-    transition: 1s;
-}
-.mainBoxMaster2Content .contentBoxSlider .contentBox5.pos4 {
-    z-index: 90;
-    transform: translateX(-121%) scale(1);
-    opacity: 70%;
-    margin-right: 20px;
-    margin-left: 20px;
-    transition: 1s;
-}
-.mainBoxMaster2Content .contentBoxSlider .contentBox5.pos5 {
-    z-index: 10;
-    transform: translateX(0%) scale(1);
-    opacity: 20%;
-    margin-right: 20px;
-    margin-left: 20px;
-    transition: 1s;
 }
 
 .mainBoxMaster2Content 
@@ -2768,34 +2671,30 @@ li  {
 }
 .contentImage {
     display: block;
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-bottom: 8%;
     width: 90%;
     height: 35%;
-    border: 1px solid black;
+    border: 0px solid black;
     border-radius: 10px;
     background-color: black;
 }
 .contentTittle {
-    display: block;
-    padding-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
     color: #FFFFFF;
-    height: 15%;
+    width: 90%;
+    height: 7%;
     border: 0px solid;
+    font-size: 35px;
 }
 .contentYapping {
-    height: 20%;
-    padding-left: 5%;
+    width: 90%;
+    height: 35%;
     border: 0px solid;
-    padding-bottom: 7%;
     color: #E0E0E0;
     overflow: hidden;
-    margin-bottom: 5%;
-    opacity: 0%;
+    font-size: 24px;
 }
 .contentmoreB {
-    margin-left: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2806,6 +2705,7 @@ li  {
     text-decoration: none;
     background-color: #FFFFFF;
     color: #8e23d5;
+    font-size: 35px;
     transition: 0.3s;
 }
 .contentmoreB:hover {
@@ -2816,62 +2716,61 @@ li  {
 .mainBoxMaster3 {
     border: 0px solid black;
     width: 97%;
-    height: 700px;
+    height: 780px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
-    transform: translateY(25%);
 }
 
 .mainBoxMaster3Tittle {
     border: 0px solid black;
     display: flex;
     align-items: center;
-    justify-content: right;
-    width: 50%;
-    height: 650px;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
 }
 .H2mainBM3Tittle {
     border: 0px solid black;
     width: 100%;
-    height: 27%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin: 0%;
     color: #D9D9D9;
+    transform: translateY(10%);
 }
 .BM3T1 {
     border: 0px solid red;
     display: flex;
-    width: 95%;
-    height: 40%;
-    align-items: center;
-    justify-content: left;
-    font-size: 55px;
+    width: 800%;
+    height: 25%;
+    align-items: end;
+    justify-content: center;
+    font-size: 35px;
     letter-spacing: 2.304rem;
 }
 .BM3T2 {
     border: 0px solid red;
     display: flex;
-    width: 95%;
-    height: 58%;
+    width: 80%;
+    height: 50%;
     align-items: center;
-    justify-content: left;
-    font-size: 130px;
+    justify-content: center;
+    font-size: 100px;
     letter-spacing: 5px;
 }
 .BM3T3 {
     border: 0px solid red;
     display: flex;
-    width: 95%;
-    height: 40%;
-    align-items: center;
-    justify-content: left;
-    font-size: 55px;
+    width: 80%;
+    height: 25%;
+    align-items: start;
+    justify-content: center;
+    font-size: 35px;
     letter-spacing: 1.6rem;
 }
 .mainBoxMaster3ContactContainer {
@@ -2880,17 +2779,17 @@ li  {
     align-items: center;
     justify-content: center;
     border: 0px solid black;
-    width: 47%;
-    height: 650px;
+    width: 100%;
+    height: 60%;
 }
 .outerContectContainer1 {
-    /* border: 1px solid black;
-    display: flex;
+    /* border: 1px solid black;*/
+    /* display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around; */
-    width: 50%;
-    height: 20%;
+    align-items: center; */
+    /*justify-content: space-around; */
+    width: 40%;
+    height: 30%;
     border-radius: 25px;
     border: px solid #2d2d39;
     /* background: #25252b;
@@ -2901,7 +2800,7 @@ li  {
     transition: all 1s ease;
 }
 .outerContectContainer2 {
-    border: 1px solid black;
+    border: 0px solid black;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -2921,7 +2820,7 @@ li  {
     align-items: center;
     border: 0px solid black;
     width: 90%;
-    height: 10%;
+    height: 5%;
     font-weight: 800;
     font-size: 40px;
     color: #D9D9D9;                                     
@@ -2944,7 +2843,7 @@ li  {
     /* display: none; */
     font-size: 20px;
     width: 100%;
-    height: 100%;
+    height: 90%;
     border: 0px solid red;
     text-align: center;
     color: #D9D9D9;
@@ -2959,8 +2858,8 @@ li  {
 }
 
 .outerContectContainer1:hover {
-    width: 65%;
-    height: 75%;
+    width: 55%;
+    height: 100%;
     transition: all 1s ease;
     transform: inherit;
 }
